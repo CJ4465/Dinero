@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="478.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.can_dinero.Dinero1Controller">
+   <children>
+      <Label layoutX="50.0" layoutY="45.0" prefHeight="44.0" prefWidth="82.0" text="Dinero:">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtDinero" alignment="CENTER_RIGHT" layoutX="132.0" layoutY="45.0" prefHeight="44.0" prefWidth="171.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Button fx:id="btnLimpiar" layoutX="326.0" layoutY="45.0" mnemonicParsing="false" onAction="#limpiarCampos" prefHeight="44.0" prefWidth="48.0" text="X">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnDesglosar" layoutX="422.0" layoutY="45.0" mnemonicParsing="false" onAction="#desglosarDinero" prefHeight="44.0" prefWidth="130.0" text="Desglosar">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <GridPane layoutX="91.0" layoutY="115.0" prefHeight="318.0" prefWidth="171.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="200.0" minWidth="-Infinity" prefWidth="126.4000244140625" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="28.39999999999999" minHeight="10.0" prefHeight="28.39999999999999" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="35.600012207031256" minHeight="10.0" prefHeight="29.399993896484375" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="30.00000610351563" minHeight="10.0" prefHeight="24.600006103515625" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label alignment="CENTER_RIGHT" prefHeight="27.0" prefWidth="172.0" text="Billetes de $500:" GridPane.rowIndex="1">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" prefHeight="27.0" prefWidth="174.0" text="Billetes de $200:" GridPane.rowIndex="2">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" prefHeight="27.0" prefWidth="184.0" text="Billetes de $100:" GridPane.rowIndex="3">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" prefHeight="27.0" prefWidth="174.0" text="Billetes de $50:" GridPane.rowIndex="4">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" prefHeight="27.0" prefWidth="175.0" text="Billetes de $20:" GridPane.rowIndex="5">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" prefHeight="27.0" prefWidth="174.0" text="Monedas de $10:" GridPane.rowIndex="6">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" prefHeight="27.0" prefWidth="173.0" text="Monedas de $5:" GridPane.rowIndex="7">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" prefHeight="27.0" prefWidth="172.0" text="Monedas de $2:" GridPane.rowIndex="8">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" prefHeight="38.0" prefWidth="173.0" text="Monedas de $1:" GridPane.rowIndex="9">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </GridPane>
+      <GridPane layoutX="326.0" layoutY="117.0" prefHeight="318.0" prefWidth="159.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="200.0" minWidth="-Infinity" prefWidth="126.4000244140625" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="28.39999999999999" minHeight="10.0" prefHeight="28.39999999999999" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="35.600012207031256" minHeight="10.0" prefHeight="29.399993896484375" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="30.00000610351563" minHeight="10.0" prefHeight="24.600006103515625" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Label fx:id="lbl500" prefHeight="27.0" prefWidth="183.0" text="0" wrapText="true" GridPane.rowIndex="1">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbl200" prefHeight="27.0" prefWidth="163.0" text="0" wrapText="true" GridPane.rowIndex="2">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbl100" prefHeight="27.0" prefWidth="178.0" text="0" wrapText="true" GridPane.rowIndex="3">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbl50" prefHeight="27.0" prefWidth="162.0" text="0" wrapText="true" GridPane.rowIndex="4">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbl20" prefHeight="27.0" prefWidth="187.0" text="0" wrapText="true" GridPane.rowIndex="5">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbl10" prefHeight="27.0" prefWidth="171.0" text="0" wrapText="true" GridPane.rowIndex="6">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbl5" prefHeight="27.0" prefWidth="170.0" text="0" wrapText="true" GridPane.rowIndex="7">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbl2" prefHeight="27.0" prefWidth="190.0" text="0" wrapText="true" GridPane.rowIndex="8">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbl1" prefHeight="27.0" prefWidth="166.0" text="0" wrapText="true" GridPane.rowIndex="9">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>
